@@ -1,25 +1,19 @@
-import logo from './logo.svg';
+
+import React from 'react';
+
 import './App.css';
+import Cart from './Components/Cart'
 
-function App() {
+
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="box">
+      <Cart name="Chicago Pizza"/>
+      <Cart name="Neoplitan Pizza"/>
+      <Cart name="Newyork Pizza"/>
+      <Cart name="Salami Pizza"/>
+      
     </div>
-  );
+  )
 }
-
-export default App;
